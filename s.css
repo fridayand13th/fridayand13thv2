@@ -13,6 +13,9 @@ body {
 background-color: white;
 height: 100%;
 }
+#main{
+width:fit-content;
+}
 #header{
     height: 50px;
     background-color: black;
@@ -90,6 +93,7 @@ height: 100%;
 #content_intro{
  
 }
+
 .container {
   position: relative;
 }
@@ -197,7 +201,6 @@ height: 100%;
   height: inherit;
   background-color: rgba(174, 142, 165, 0.8);
   opacity: 1;
-  left:50%;
   width: 50%;
   display: grid;
   align-content: center;

@@ -6,6 +6,7 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     height:auto;
+    width:fit-content;
 }
 .textwhite{
     color: #fff !important;
@@ -16,7 +17,6 @@ background-color: white;
 }
 #main{
 width:fit-content;
-    height:auto;
 }
 #header{
     height: 50px;
@@ -36,7 +36,8 @@ width:fit-content;
     align-items: center;
     margin-top: 12px;
     margin-left: 30%;
-    font-size: 30px;
+    font-size: 1.1rem;
+    font-weight:400;
     line-height: 1;
 }
 .sidenav {
@@ -198,7 +199,8 @@ width:fit-content;
 }
 #hoby_p{
   position: relative;
-  font-size: 30px;
+  font-size: 1.5rem;
+    font-weight:300;
   color:white;
   height: inherit;
   background-color: rgba(174, 142, 165, 0.8);

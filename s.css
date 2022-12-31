@@ -5,6 +5,7 @@
 }
 html{
     font-family: Arial, Helvetica, sans-serif;
+    height:auto;
 }
 .textwhite{
     color: #fff !important;

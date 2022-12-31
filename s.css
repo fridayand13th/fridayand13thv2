@@ -11,10 +11,11 @@ html{
 }
 body {
 background-color: white;
-height: 100%;
+ height:auto;
 }
 #main{
 width:fit-content;
+    height:auto;
 }
 #header{
     height: 50px;

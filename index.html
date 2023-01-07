@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-with, initial-scale=1.0">
     <title>Một cái web lmao</title>
     <link rel="stylesheet" href="./s.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
     <div id="main">
         <div id="header">
               <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="containerlk1" onclick="closeNav()"  >
+                  <div class="bar11"></div>
+                  <div class="bar21"></div>
+                  <div class="bar31"></div>
+                </div>
                 <a href="#content_hoby" onclick="closeNav()">About</a>
                 <a href="#" onclick="closeNav()">Services</a>
                 <a href="#" onclick="closeNav()">Clients</a>
@@ -19,84 +24,94 @@
               </div>
               
               <!-- Use any element to open the sidenav -->
-              <span onclick="openNav()" id ="sop">|||</span>
-            
-              <div id="nav"><p style="color: white; width: fit-content;font-size: inherit;">Rất vui được gặp bạn (chắc thế) :))</p></div>
+              <div class="containerlk" onclick="openNav()"  >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              
+              <div id="div1" class="fa"></div>
+
+              <script>
+              function ratestar() {
+                var a;
+                a = document.getElementById("div1");
+                a.innerHTML = "&#xf006;";
+                setTimeout(function () {
+                    a.innerHTML = "&#xf123;";
+                  }, 1000);
+                setTimeout(function () {
+                    a.innerHTML = "&#xf005;";
+                  }, 2000);
+              }
+              ratestar();
+              setInterval(ratestar, 3000);
+              </script>
+              <div id="hh"><p id="hh1">Web của Mạnh</p></div>
         </div>
         <div id="content">
           <div id="content_intro">
-            <div id="content_slide_dad">
-            <div class="mySlides">
-              <div class="numbertext">1 / 6</div>
-                <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
+              <img src="./imge/tim.jpg" style="width: 50%; height: 55%;;opacity: 0.9; top: 180px; position: absolute;">
+              <div id="intro1">
+              <h1 id="text1">Ồ! Chào bạn.</h1>
+                  <p>Có thể bạn không biết tôi nhưng tôi cũng không biết bạn.Vậy nên cùng làm quen nào!</p>  
             </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">2 / 6</div>
-                <img src="./imge/100192216_p0_master1200.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">3 / 6</div>
-                <img src="./imge/100213136_p0_master1200.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">4 / 6</div>
-                <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">5 / 6</div>
-                <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">6 / 6</div>
-                <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
-            <!-- Image text -->
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-          
-            <!-- Thumbnail images -->
-            <div class="row">
-              <div class="column">
-                <img class="demo cursor" src="./imge/102799524_p2_master1200.jpg" style="width:100%;height:147.33px ;" onclick="currentSlide(1)" alt="The Woods">
+              <div id="intro2">
+                <p>Tôi sinh năm 2003. Dù đã trải qua 19 cái nồi bánh chưng nhưng lại chưa một lần được cầm tay ai. Tôi hiện đang học ngành công nghệ thông tin với hi vọng mai sau có thể làm chạn vương :). Tôi không thích các môn thể thao cho lắm.
+                   Do vậy tôi thường ở trong nhà đọc sách hoặc xem phim. Tôi thích LOL cơ mà tôi không chơi (cơ bản là do chơi ngu!), tôi thích xem người khác chơi hơn là mình tự chơi.
+                   Tôi thích nghe nhạc của Vũ dù chưa thất tình bao giờ (bấm vào <span id="dh1" class="intro2_dh1" onclick="opendh1()">đây</span> để biết những bài tôi thích của Vũ).<br>
+                   I am a WIBU. Và đây là điều quan trọng nhất tôi muốn bạn biết về tôi.(Nếu bạn cũng là Wibu thì ấn vào <span id="dh2" class="intro2_dh2" onclick="opendh2()">V</span>. Nếu bạn ko phải thì cũng nên ấn bởi bây giờ ai cũng là 
+                   Wibu.)
+                </p>
               </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/100192216_p0_master1200.jpg" style="width:100%; height:147.33px ;" onclick="currentSlide(2)" alt="Cinque Terre">
+              <div id="nhacvu" class="intro2_list_nhac" >
+                <div class="containerlk1" onclick="closedh1()"  >
+                  <div class="bar11"></div>
+                  <div class="bar21"></div>
+                  <div class="bar31"></div>
+                </div>
+                <div id="gt"><p>Vũ là một số ít những nghệ sĩ Việt Nam mà mình theo dõi. Thật sự là nhạc của Vũ là một cái gì đó rất khác so với phần còn lại của nhạc Việt (hoặc đó là do mình ít nghe nhạc Việt)<br>
+                Nếu bạn muốn nghe bài nào của Vũ dưới đây hãy bấm vào ảnh!</p></div>
+                <div id="n">
+                <a href="https://www.youtube.com/playlist?list=PLn7c8RY7CfPbs_XTnBFv7Z72f8J9ghWY-" target="_blank"><img src="./imge/1vn2.jpg" class="imge imge1">
+                <p class="p p1">Một năm thành công của vũ với album này. Album này quá hay. Bài nào cũng 10 điểm</p>
+                </a>
+                </div>
+                <div id="n">
+                <a href="https://www.youtube.com/watch?v=n6Pnzi6r9NU&list=PLn7c8RY7CfPbs_XTnBFv7Z72f8J9ghWY-&index=9" target="_blank"><img src="./imge/muacodon.jpg" class="imge imge2">
+                <p class="p p1">Amazing! Goodjob!</p></a>
               </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/100213136_p0_master1200.jpg" style="width:100%; height:147.33px ;" onclick="currentSlide(3)" alt="Mountains and fjords">
+              <div id="n">
+                <a href="https://www.youtube.com/watch?v=ixdSsW5n2rI&list=PLn7c8RY7CfPbs_XTnBFv7Z72f8J9ghWY-&index=8" target="_blank"><img src="./imge/quanhau.jpg" alt="" class="imge imge3">
+                <p class="p p1">Chắc bạn cũng đã nghe qua bài này rồi, vì nó trở thành trend trên tóp tóp một thời gian.</p></a>
               </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/102799524_p2_master1200.jpg" style="width:100%; height:147.33px ;" onclick="currentSlide(4)" alt="Northern Lights">
+              <div id="n">
+                <a href="https://www.youtube.com/watch?v=nIl_gX9W5qQ" target="_blank"><img src="./imge/hersummer.jpg" class="imge imge4" alt="">
+                <p class="p p1">Một bài nhạc khá chill và nó ở trong giai đoạn mà Vũ thay đổi âm nhạc của mình</p></a>
+                </div>
+                <div id="n">
+                <a href="https://www.youtube.com/watch?v=F5tS5m86bOI" target="_blank"><img src="./imge/lalung.jpg" class="imge imge5" alt="">
+                <p class="p p1">Bài nhạc giúp Vũ được biết đến nhiều hơn trong nền nhạc Việt. Một bài nhạc tinh tế chạm lòng người</p></a>
               </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/102799524_p2_master1200.jpg" style="width:100%;height:147.33px ;" onclick="currentSlide(5)" alt="Nature and sunrise">
               </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/102799524_p2_master1200.jpg" style="width:100%;height:147.33px ;" onclick="currentSlide(6)" alt="Snowy Mountains">
+              <div id="wibu" class="intro2_wibu_list">
+                <div class="containerlk1" onclick="closedh2()"  >
+                  <div class="bar11"></div>
+                  <div class="bar21"></div>
+                  <div class="bar31"></div>
+                </div>
+                <a href="#">Anh nhớ ra</a>
+                <a href="#">sfsdf</a>
+                <a href="#">dsfsad</a>
+                <a href="#">jksjskdsf</a>
+                <a href="#"></a>
+
+
               </div>
+             </div>
             </div>
-              <div id="content_slide">
-              <h1 id="text1">Ồ! chào bạn.</h1>
-                  <P>Có thể bạn không biết tôi nhưng tôi cũng không biết bạn.</P>
-              </div>  
-              </div>
-            </div>
-          </div>
           <div id="content_hoby">
-            <div id="hoby_p"><h3 style=" margin-left:-35%; font-size:inherit;">i am a wibu</h3><br>
-            dsdjfsjdfjkdshfkjahjfhkdhkjhdjfkashdfjhdhfkdsjhkdhkfjskd<br>
-          sdhfksahdkfkdsjhfkjshdfjahdfkjhasjkdfhjsd</div>
+            
           </div>
           <div id="content_job">
 
@@ -109,8 +124,37 @@
        function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
         }
+        </script>
+         <script>
+          function opendh1() {
+             document.getElementById("nhacvu").style.width = "100%";
+           }
+           </script>
+           <script>
+           function opendh2(){
+            document.getElementById("wibu").style.height = "100%";
+           }
+           </script>
+            <script>
+              function closedh1() {
+              document.getElementById("nhacvu").style.width = "0";
+            
+              }
+              </script>
+              <script>
+              function closedh2(){
+                document.getElementById("wibu").style.height = "0";
+              }
+              </script>
+        <script>
+              function myFunction(x) {
+                x.classList.toggle("change");
+                
+              }
+              </script>
 
-/* Set the width of the side navigation to 0 */
+
+        <script>
         function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         }

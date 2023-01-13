@@ -17,9 +17,11 @@ height:auto;
 }
 #main{
 width:fit-content;
+
+
 }
 #header{
-  height: 50px;
+  height: max-content;
   background-color:black;
   z-index: 1;
   position: fixed;
@@ -35,15 +37,18 @@ width:fit-content;
   color: darkturquoise;
 }
 
-#hh{
+.hh{
   height: 50px;
-  display: flex;
-  align-items: center;
-  margin-left: 15%;
-  font-size: 45px;
-  font-weight:600;
-  line-height: 1;
-  color: rgb(241, 244, 247);
+    display: flex;
+    align-items: center;
+    /* margin-left: 15%; */
+    font-size: 3.5vw;
+    font-weight: 550;
+    width: 50%;
+    line-height: 1;
+    color: rgb(241, 244, 247);
+    position: relative;
+    left: 25%;
 }
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -76,21 +81,23 @@ width:fit-content;
   z-index: 1; /* Stay on top */
   bottom: 0px; /* Stay at the top */
   right: 0;
-  background-color: rgb(63, 101, 118); /* Black*/
+  background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51)); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 /* The navigation menu links */
 .sidenav a,.intro2_wibu_list a {
-  padding: 8px 8px 8px 32px;
+  
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 3vw;
+  color:  #1082ea;
   display: block;
   transition: 0.3s;
 }
-
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+}
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
@@ -110,6 +117,15 @@ width:fit-content;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+@media screen and (min-height: 1700px) {
+  #intro2{ margin-top: 50px;}
+  img{margin-top: 50px;}
+  #content{
+    left: 50%;
+    right: 50%;
+    width: 60%;
+  }
 }
 
 .containerlk {
@@ -154,102 +170,141 @@ width:fit-content;
 }
 
 #content_intro{
-
+  height: 100%;
+  width: 100%;
 }
-
-.container {
-position: relative;
+.slideshow-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-height: 500px;
+  position: relative;
+  margin-top: 190px;
 }
-
+.slideshow-container2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-height: 500px;
+  position: relative;
+  margin-top: 40px;
+  width: initial;
+}
+#firsttl{
+  position: absolute;
+  top: 60px;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(140deg, rgb(17, 46, 80),rgb(95, 86, 102));
+  font-size: 3vw;
+}
+.managa{
+  height: fit-content;
+  width: inherit;
+  background: linear-gradient(75deg,rgb(0,1,2),rgb(88, 96, 99));
+}
+.pp{
+  position: relative;
+  left: 1%;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.h22{
+  color: #f1f1f1;
+  position: absolute;
+  left: 35%;
+  top: 6%;
+}
 /* Hide the images by default */
-.mySlides {
-display: none;
-}
+.mySlides1, .mySlides2 {display: none}
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-cursor: pointer;
-}
+
+/* Slideshow container */
+
 
 /* Next & previous buttons */
-.prev,
-.next {
-cursor: pointer;
-position: absolute;
-top: 31%;
-width: auto;
-padding: 16px;
-margin-top: -50px;
-color: white;
-font-weight: bold;
-font-size: 20px;
-border-radius: 0 3px 3px 0;
-user-select: none;
--webkit-user-select: none;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 6%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-right: 252px;
-border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-
+.prev{
+  right: 50px;
+}
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+ 
+  color: black;
+}
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-background-color: rgba(0, 0, 0, 0.8);
+
+.imgea{
+ width: 30%;
+ height: 30vw;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 2vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  width: inherit;
+  left: 35%;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px;
-position: absolute;
-top: 0;
+  color: #241a49;
+  font-size: 2vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: -50px;
+}
+.numbertext2 {
+  color: #241a49;
+  font-size: 2vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: -380px;
 }
 
-/* Container for image text */
-.caption-container {
-text-align: center;
-background-color: #222;
-padding: 2px 16px;
-color: white;
+/* The dots/bullets/indicators */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.row:after {
-content: "";
-display: table;
-clear: both;
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-/* Six columns side by side */
-.column {
-float: left;
-width: 16.66%;
-}
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-opacity: 1;
-}
-#content_slide_dad{
-
-}
 #content{
 top: 40px;
 position: absolute;
 margin-top: 10px;
 margin-bottom: 10px;
-background-image: url('./imge/ui16_p0_master1200.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-height: 725px;
+background: linear-gradient(180deg, rgb(120, 169, 228),rgb(95 77 111));
+height: 100%;
 width: 100%;
 }
 #intro1{
@@ -262,41 +317,113 @@ width: 100%;
 #intro2{
   position: absolute;
   font-size: 2vw;
-  top:180px;
+  top:30%;
   padding-left: 51%;
   color: rgb(7, 0, 3);
   
 }
 #dh1,#dh2{
-  color: rgb(113, 23, 9);
+  color: rgb(172, 185, 238);
   cursor: pointer;
-}
-#dh2{
   font-size: 2vw;
   font-weight: 600;
 }
 #nhacvu{
-  background-image: url('./imge/vu_background.jpg');
-  background-size: 200px;
-  background-repeat: repeat;
+  background: linear-gradient(132deg, rgb(165, 164, 213) 0%, rgb(18, 14, 24) 100%);
+  
 }
 #gt{
-  top:20px;
+  
+  font-size: 3vw;
+  padding-top:60px;
   position: absolute;
-  left: 25%;
-  background-color: #f1f1f1;
+  padding-left: 1%;
+  padding-right: 1%;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51));
 }
 #n{
-  margin-left: 25%;
-
+  margin-left: 5%;
+  margin-bottom: 5%;
+  
+}
+.ol1{
+  background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51));
+}
+.n1{
+  margin-top: 25%;
+}
+.nn{
+  margin-left: 5%;
+    margin-bottom: 2%;
+    border-style: solid;
+    
+    border-color: cornsilk;
+    margin-right: 5%;
 }
 .imge{
-  width: 640px;
-  height: 640px;
+  width: 8vw;
+  height: 8vw;
 }
 .p{
   color: #f1f1f1;
   
+}
+li{
+  color: #111;
+  font-size: 2vw;
+}
+a:link{
+  text-decoration: none;
+}
+.hn{
+  color: #fff;
+}
+
+.contact{
+  background: linear-gradient(0deg, rgb(120, 169, 228),rgb(95 77 111));
+  position: relative;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+.cot{
+  font-size: 2vw;
+  position: absolute;
+  margin-top: 20px;
+}
+.cot1{
+  top: 20%;
+
+}
+.cot2{
+ top: 40%;
+}
+
+.b{
+  border-style: outset;
+    width: 270px;
+    height: 50px;
+    background: linear-gradient(45deg, rgb(55 91 203), rgb(113 166 177));
+    border-color: black;
+}
+#content_job{
+  position: absolute;
+  top: 50%;
+
+}
+#demo {
+  text-align: center;
+  font-size: 60px;
+  position: absolute;
+  bottom: 0;
+}
+.dn{
+  position: absolute;
+  font-size: 3vw;
+  bottom: 20%;
 }
 
 

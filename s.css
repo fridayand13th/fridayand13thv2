@@ -228,7 +228,7 @@ width:fit-content;
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  bottom: 1%;
+  bottom: 0;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -324,7 +324,7 @@ width: 100%;
   
 }
 #dh1,#dh2{
-  color: rgb(172, 185, 238);
+  color: rgb(196 213 78);
   cursor: pointer;
   font-size: 2vw;
   font-weight: 600;
@@ -420,7 +420,7 @@ a:link{
 }
 #demo {
   text-align: center;
-  font-size: 60px;
+  font-size: 4vw;
   position: absolute;
   bottom: 0;
 }

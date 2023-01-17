@@ -12,7 +12,7 @@ html{
   color: #fff !important;
 }
 body {
-background-color: rgb(96, 147, 158);
+background-color: rgb(9 49 150 / 61%);
 height:auto;
 }
 #main{
@@ -172,6 +172,8 @@ width:fit-content;
 #content_intro{
   height: 100%;
   width: 100%;
+ 
+
 }
 .slideshow-container {
   margin-left: 10px;
@@ -303,19 +305,18 @@ top: 40px;
 position: absolute;
 margin-top: 10px;
 margin-bottom: 10px;
-background: linear-gradient(180deg, rgb(120, 169, 228),rgb(95 77 111));
 height: 100%;
 width: 100%;
 }
 #intro1{
-  position: absolute;
-  top: 70px;
+  position: relative;
+  top: 10%;
   font-size: 2vw;
   padding-left: 16px;
   
 }
 #intro2{
-  position: absolute;
+  position: relative;
   font-size: 2vw;
   top:30%;
   padding-left: 51%;
@@ -382,8 +383,9 @@ a:link{
 }
 
 .contact{
-  background: linear-gradient(0deg, rgb(120, 169, 228),rgb(95 77 111));
+ 
   position: relative;
+  top: 50%;
   width: 100%;
   height: 70%;
   display: flex;

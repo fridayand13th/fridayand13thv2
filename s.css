@@ -228,7 +228,7 @@ width:fit-content;
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  bottom: 6%;
+  bottom: 1%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -242,11 +242,11 @@ width:fit-content;
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 1%;
   border-radius: 3px 0 0 3px;
 }
 .prev{
-  right: 50px;
+  right: 10%;
 }
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
@@ -336,7 +336,7 @@ width: 100%;
 #gt{
   
   font-size: 3vw;
-  padding-top:60px;
+  padding-top:20px;
   position: absolute;
   padding-left: 1%;
   padding-right: 1%;
@@ -350,7 +350,9 @@ width: 100%;
   
 }
 .ol1{
-  background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51));
+  top: 10%;
+    /* background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51)); */
+    position: relative;
 }
 .n1{
   margin-top: 25%;
@@ -373,7 +375,7 @@ width: 100%;
 }
 li{
   color: #111;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 a:link{
   text-decoration: none;

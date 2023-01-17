@@ -408,8 +408,8 @@ a:link{
 
 .b{
   border-style: outset;
-    width: 270px;
-    height: 50px;
+    width: 130%;
+    
     background: linear-gradient(45deg, rgb(55 91 203), rgb(113 166 177));
     border-color: black;
 }

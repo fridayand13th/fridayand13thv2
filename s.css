@@ -1,429 +1,552 @@
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 html{
-  font-family: Arial, Helvetica, sans-serif;
-  height:auto;
-  width:fit-content;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.textwhite{
-  color: #fff !important;
+body{
+    background-color: #fcfbfb;
+    background-size: cover;
+    /**/
+    
 }
-body {
-background-color: rgb(9 49 150 / 61%);
-height:auto;
+.te{
+    color: #fff ;
 }
 #main{
-width:fit-content;
-
-
-}
-#header{
-  height: max-content;
-  background-color:black;
-  z-index: 1;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  
-}
-#div1 {
-  font-size:48px;
-  position: absolute;
-  left: 15px;
-  color: darkturquoise;
-}
-
-.hh{
-  height: 50px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+   
     display: flex;
     align-items: center;
-    /* margin-left: 15%; */
-    font-size: 3.5vw;
-    font-weight: 550;
-    width: 50%;
-    line-height: 1;
-    color: rgb(241, 244, 247);
-    position: relative;
-    left: 25%;
+    justify-content: center;
+    /*text-align: center;*/
+    overflow: hidden;
 }
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0px; /* Stay at the top */
-  right: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-.intro2_list_nhac  {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0px; /* Stay at the top */
-  left: 0;
-  background-color: rgb(63, 101, 118); /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-.intro2_wibu_list {
-  height: 0; /* 100% Full-height */
-  width: 100%; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  bottom: 0px; /* Stay at the top */
-  right: 0;
-  background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51)); /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-/* The navigation menu links */
-.sidenav a,.intro2_wibu_list a {
-  
-  text-decoration: none;
-  font-size: 3vw;
-  color:  #1082ea;
-  display: block;
-  transition: 0.3s;
-}
-.sidenav a{
-  padding: 8px 8px 8px 32px;
-}
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-@media screen and (min-height: 1700px) {
-  #intro2{ margin-top: 50px;}
-  img{margin-top: 50px;}
-  #content{
-    left: 50%;
-    right: 50%;
-    width: 60%;
-  }
-}
-
-.containerlk {
-  display: grid;
-    cursor: pointer;
-    right: 10px;
+#firstintro{
     position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(220deg, rgb(241, 184, 233),rgb(241, 245, 144));
+    user-select: none;
+    transition: 4s;
 }
-.containerlk1 {
-  display: grid;
-    cursor: pointer;
-    right: 10px;
+#text1{
     position: absolute;
-    top: 5px;
-   padding-top: 1px;
+    top: 10%;
+    font-size: 30px;
+    font-weight: 600;
+    color: #16668cf2;
+    text-align: center;
 }
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: rgb(117, 224, 245);
-  margin: 6px 0;
-  transition: 0.4s;
+.firstimg{
+    position: absolute;
+    right: -96px;
+    top: -112px;
+    rotate: 220deg;
+    height: 50%;
 }
-
-.bar11 {
-  transform: translate(0, 11px) rotate(-45deg);
-  background-color: rgb(117, 224, 245);
-  width: 35px;
-  height: 5px;
-  margin: 6px 0;
+.meo{
+    position: absolute;
+    rotate: 0deg;
+    left: -1.5%;
+    bottom: 0px;
+    height: 50%;
 }
-
-.bar21 {opacity: 0;}
-
- .bar31 {
-  transform: translate(0, -11px) rotate(45deg);
-  background-color: rgb(117, 224, 245);
-  width: 35px;
-  height: 5px;
-  margin: 6px 0;
+#cainut{
+    position: absolute;
+    top: 55%;
+    background-color: powderblue;
+    height: 50px;
+    width: 130px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    cursor: pointer;
 }
-
-#content_intro{
-  height: 100%;
-  width: 100%;
- 
-
+#firsttalk{
+    font-size: 3vh;
+    font-weight: 600;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background-image:linear-gradient(180deg,rgb(102, 232, 241), rgb(245, 248, 245));
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 4s;
+    text-align: center;
 }
-.slideshow-container {
-  margin-left: 10px;
-  margin-right: 10px;
-  max-height: 500px;
-  position: relative;
-  margin-top: 190px;
+#text2{
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
-.slideshow-container2 {
-  margin-left: 10px;
-  margin-right: 10px;
-  max-height: 500px;
-  position: relative;
-  margin-top: 40px;
-  width: initial;
+#nutso2{
+    margin-top: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    top: 70%;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    background-color: powderblue;
+    height: 50px;
+    width: 130px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
-#firsttl{
-  position: absolute;
-  top: 60px;
-  padding-left: 1%;
-  padding-right: 1%;
-  color: #fff;
-  font-weight: 600;
-  background: linear-gradient(140deg, rgb(17, 46, 80),rgb(95, 86, 102));
-  font-size: 3vw;
-}
-.managa{
-  height: fit-content;
-  width: inherit;
-  background: linear-gradient(75deg,rgb(0,1,2),rgb(88, 96, 99));
-}
-.pp{
-  position: relative;
-  left: 1%;
-  font-size: 2vw;
-  font-weight: 600;
-}
-.h22{
-  color: #f1f1f1;
-  position: absolute;
-  left: 35%;
-  top: 6%;
-}
-/* Hide the images by default */
-.mySlides1, .mySlides2 {display: none}
-
-
-/* Slideshow container */
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  width: auto;
-  padding: 5px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 1%;
-  border-radius: 3px 0 0 3px;
-}
-.prev{
-  right: 10%;
-}
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
- 
-  color: black;
-}
-/* On hover, add a black background color with a little bit see-through */
-
-.imgea{
- width: 30%;
- height: 30vw;
-}
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 2vw;
-  padding: 8px 12px;
-  position: absolute;
-  top: 40%;
-  width: inherit;
-  left: 35%;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #241a49;
-  font-size: 2vw;
-  padding: 8px 12px;
-  position: absolute;
-  top: -50px;
-}
-.numbertext2 {
-  color: #241a49;
-  font-size: 2vw;
-  padding: 8px 12px;
-  position: absolute;
-  top: -380px;
-}
-
-/* The dots/bullets/indicators */
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
 #content{
-top: 40px;
-position: absolute;
-margin-top: 10px;
-margin-bottom: 10px;
-height: 100%;
-width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(132, 25, 25);
+    right: 0;
+    bottom: 0;
+    transition: 1.5s;
 }
-#intro1{
-  position: relative;
-  top: 10%;
-  font-size: 2vw;
-  padding-left: 16px;
-  
+.anh{
+ position: absolute;
+ height: 50%;
+ 
 }
-#intro2{
-  position: relative;
-  font-size: 2vw;
-  top:30%;
-  padding-left: 51%;
-  color: rgb(7, 0, 3);
-  
+.anh1{
+    left: -5%;
+    bottom: -5%;
+    rotate: 30deg;
 }
-#dh1,#dh2{
-  color: rgb(187 197 37);
-  cursor: pointer;
-  font-size: 2vw;
-  font-weight: 600;
+.anh2{
+    right: -5%;
+    bottom:  -5%;
 }
 #nhacvu{
-  background: linear-gradient(132deg, rgb(165, 164, 213) 0%, rgb(18, 14, 24) 100%);
-  
+    background: linear-gradient(132deg, rgb(71 69 161) , rgb(60 180 213) );
+    height: 100%;
+    position: absolute;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  #gt{
+    
+    font-size: 3vw;
+    padding-top:20px;
+    position: absolute;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: #fff;
+    font-weight: 600;
+   
+  }
+  #n{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    
+  }
+  .ol1{
+    top: 10%;
+      /* background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51)); */
+      position: relative;
+  }
+  .n1{
+    margin-top: 15%;
+  }
+  .nn{
+    margin-left: 5%;
+      margin-bottom: 2%;
+      
+      margin-right: 5%;
+  }
+  .imge{
+    width: 8vw;
+    height: 8vw;
+  }
+  .p{
+    color: #f1f1f1;
+    
+  }
+  li{
+    color: #111;
+    font-size: 3vw;
+  }
+  a:link{
+    text-decoration: none;
+  }
+  .hn{
+    color: #fff;
+  }
+  #cloud{
+    position: fixed;
+    right: 5%;
+    
+    height: 50%;
+    bottom: 40px;
+    display: none;
+  }
+#nutso3{
+    
+    margin-top: 10vh;
+    right: 3%;
+    position: absolute;
+    font-size: 5vw;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    background-color: powderblue;
+    height: 8vh;
+    width: 15vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+   
 }
-#gt{
-  
-  font-size: 3vw;
-  padding-top:20px;
-  position: absolute;
-  padding-left: 1%;
-  padding-right: 1%;
-  color: #fff;
-  font-weight: 600;
-  background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51));
+#content2{
+    position: absolute;
+    background-color: rgb(33, 154, 190);
+    height: 0;
+    width: 100%;
+    top: 0;
+    right: 0;
+    transition: 1.5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: linear-gradient(140deg, rgb(17, 46, 80),rgb(95, 86, 102));
 }
-#n{
-  margin-left: 5%;
-  margin-bottom: 5%;
-  
+#wibu{
+    
+    display: none;
 }
-.ol1{
-  top: 10%;
-    /* background: linear-gradient(140deg, rgb(120, 169, 228),rgb(38, 23, 51)); */
+.intro2_wibu_list {
+    height: 100%; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: relative; /* Stay in place */
+    /* Stay on top */
+    /* Stay at the top */
+    right: 0;
+    
+   /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    /* 0.5 second transition effect to slide in the sidenav */
+  }
+  .sidenav a,.intro2_wibu_list a {
+  
+    text-decoration: none;
+    font-size: 3vw;
+    color:  #1082ea;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a{
+    padding: 8px 8px 8px 32px;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .slideshow-container {
+    width: 100%;
+   
+    position: absolute;
+    margin-top: 20%;
+  }
+  .slideshow-container2 {
+    
+    margin-top: 60%;
+    position: absolute;
+    width: 100%;
+  }
+  #firsttl{
+    position: absolute;
+    top: 2vh;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: #fff;
+    font-weight: 600;
+    background-color: #0a0a0a;
+    font-size: 3vw;
+  }
+  .managa{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(75deg,rgb(0,1,2),rgb(88, 96, 99));
+  }
+  .pp{
     position: relative;
-}
-.n1{
-  margin-top: 25%;
-}
-.nn{
-  margin-left: 5%;
-    margin-bottom: 2%;
-    border-style: solid;
-    
-    border-color: cornsilk;
-    margin-right: 5%;
-}
-.imge{
-  width: 8vw;
-  height: 8vw;
-}
-.p{
-  color: #f1f1f1;
+    left: 1%;
+    font-size: 2vw;
+    font-weight: 600;
+    color: #f1f1f1;
+  }
+  .h22{
+    color: #f1f1f1;
+    position: absolute;
+    left: 35%;
+    top: 6%;
+  }
+  /* Hide the images by default */
+  .mySlides1, .mySlides2 {display: none}
   
-}
-li{
-  color: #111;
-  font-size: 3vw;
-}
-a:link{
-  text-decoration: none;
-}
-.hn{
-  color: #fff;
-}
-
-.contact{
+  
+  /* Slideshow container */
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 1%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    right: 10%;
+  }
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+   
+    color: black;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  
+  .imgea{
+   width: 30%;
+   height: 30vw;
+  }
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 2vw;
+    padding: 8px 12px;
+    position: absolute;
+    top: 35%;
+    width: 70vw;
+    left: 30%;
+    line-height: 3vw;
+  }
+  #nutso4{
+   bottom: -15vh;
+   right: 5px;
+    position: absolute;
+    font-size: 5vw;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    background-color: powderblue;
+    height: 8vh;
+    width: 15vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #content3{
+    position: absolute;
+    display: none;
+    background-image: url(./imge/ngan-pham-lil-ants-anim-test-v06.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    animation: ani 2s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .contact{
  
-  position: relative;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
-.cot{
-  font-size: 2vw;
-  position: absolute;
-  margin-top: 20px;
-}
-.cot1{
-  top: 20%;
-
-}
-.cot2{
- top: 40%;
-}
-
-.b{
-  border-style: outset;
-    width: 130%;
+    position: absolute;
+    top: 23%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .cot{
     
-    background: linear-gradient(45deg, rgb(55 91 203), rgb(113 166 177));
-    border-color: black;
-}
+    position: absolute;
+    font-size: 3vw;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    
+    height: 60px;
+    width: 250px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .cot1{
+   top: 30%;
+   background-color: #0d3fac;
+  }
+  .cot2{
+  top: 50%;
+  background-image: linear-gradient(210deg,rgb(138, 58, 158),rgb(188, 42, 141),rgb(252, 104, 99),rgb(251, 173, 80));
+  }
+  a:link{
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  .tay2{
+    position: absolute;
+    height: 60%;
+    left: 20%;
+    bottom: -18%;
+    rotate: 195deg;
+  }
+  #menu{
+    cursor: pointer;
 
-#demo {
-  text-align: center;
-  font-size: 4vw;
-  position: absolute;
-  bottom: 0;
-}
-.dn{
-  position: absolute;
-  font-size: 4vw;
-  bottom: 20%;
-}
 
-
+  }
+  .icon{
+    position: fixed;
+    display: flex;
+    bottom: 9%;
+    right: 40px;
+    font-size:45px ;
+    background-color: #f1f1f1;
+    border: 2px solid #0a0a0a;
+    border-radius: 50%;
+  }
+  #noidung{
+    position: absolute;
+    display: none;
+    height: 26vh;
+    width: 24vh;
+    background: linear-gradient(120deg, rgb(97, 241, 252), rgb(247, 82, 247));
+    border: 2px solid #0a0a0a;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    right: 5%;
+    bottom: 13%;
+  }
+  ol{
+    list-style-type: none;
+  
+  }
+  li:hover{
+    
+    color: #f1f1f1;
+  }
+  li{
+    font-size: 20px;
+  }
+  @keyframes ani{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @media screen and (max-width: 500px){
+    #text2{
+      top: 3vh;
+    }
+    .anh2{
+      display: none;
+    }
+    .anh1{
+      left: -5%;
+    bottom: 0%;
+    rotate: 360deg;
+    }
+    .anh{
+      height: 32vh;
+    }
+    .contact{
+      
+    }
+    .cott{
+      background-color:  #dcd6d661;
+      top: -19%;
+      position: absolute;
+      font-size: 14px;
+    }
+    .cot{
+      height: 50px;
+      width: 200px;
+      font-size: 22px;
+    }
+    .cot1{
+      top: 20vh;
+    }
+    .cot2{
+      top: 35vh;
+    }
+    .tay2{
+    position: absolute;
+    height: 50%;
+    left:  64%;
+    bottom: -9%;
+    rotate: 115deg;
+    }
+    #text1{
+      color: #0a0a0a;
+    }
+    #gt{
+      font-size: 20px;
+    }
+    li{
+      font-size: 25px;
+    }
+    .ol1{
+      top: 26%;
+    }
+    .imge{
+      width: 18vw;
+      height: 14vw;
+    }
+    #nutso3{
+      margin-top: 0;
+      bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 750px){
+    .icon {
+      position: fixed;
+      display: flex;
+      bottom: 10vh;
+      right: 45px;
+      font-size: 45px;
+      background-color: rgb(241, 241, 241);
+      border: 2px solid rgb(10, 10, 10);
+      border-radius: 50%;
+  }
+  }
